@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Effects Presets & Plugins - VST3 Plugin Vault</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Fl Daw Vault</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Plugins</a></li>
+                <li><a href="daws.html">DAWs</a></li>
+                <li><a href="aftereffects.html" class="active">After Effects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>After Effects Vault</h1>
+            <p>Download top-tier project files, presets, and plugins for your edits, vibecoded by Kronikk_</p>
+            
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search AE assets by name or category...">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="plugin-grid" id="pluginGrid">
+
+            <div class="plugin-card" data-name="twixtor" data-category="plugin">
+                <div class="card-header">
+                    <span class="badge synth">Plugin</span>
+                    <span class="version">v7.2</span>
+                </div>
+                <h3>Twixtor</h3>
+                <p>Essential for smooth, high-quality slow motion and time remapping.</p>
+                <div class="card-footer">
+                    <span class="file-size">External Link</span>
+                    <a href="#" class="download-btn">Download</a>
+                </div>
+            </div>
+
+            <div class="plugin-card" data-name="saber" data-category="plugin">
+                <div class="card-header">
+                    <span class="badge effect">Plugin</span>
+                    <span class="version">v1.0</span>
+                </div>
+                <h3>Video Copilot Saber</h3>
+                <p>Create glowing energy lights, lasers, and portals for free.</p>
+                <div class="card-footer">
+                    <span class="file-size">External Link</span>
+                    <a href="#" class="download-btn">Download</a>
+                </div>
+            </div>
+
+            <div class="plugin-card" data-name="sapphire" data-category="plugin">
+                <div class="card-header">
+                    <span class="badge dynamics">Plugin Suite</span>
+                    <span class="version">Latest</span>
+                </div>
+                <h3>Boris FX Sapphire</h3>
+                <p>Industry standard effects, glow transitions, and lens flares.</p>
+                <div class="card-footer">
+                    <span class="file-size">External Link</span>
+                    <a href="#" class="download-btn">Download</a>
+                </div>
+            </div>
+
+            <div class="plugin-card" data-name="cc datamosh" data-category="preset">
+                <div class="card-header">
+                    <span class="badge synth">Preset</span>
+                    <span class="version">v2.0</span>
+                </div>
+                <h3>Datamosh Presets</h3>
+                <p>Glitchy compression artifacts and digital melting transitions.</p>
+                <div class="card-footer">
+                    <span class="file-size">External Link</span>
+                    <a href="#" class="download-btn">Download</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="noResults" class="no-results hidden">
+            <p>No After Effects assets found matching your search. Try another keyword!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; all vibecoded by Kronikk_</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
