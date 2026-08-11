@@ -159,6 +159,8 @@ main {
 .badge.synth { background-color: rgba(99, 102, 241, 0.2); color: #818cf8; }
 .badge.effect { background-color: rgba(16, 185, 129, 0.2); color: #34d399; }
 .badge.dynamics { background-color: rgba(245, 158, 11, 0.2); color: #fbbf24; }
+.badge.modulation { background-color: rgba(245, 158, 11, 0.2); color: ##88cc78; }
+
 
 .version {
     font-size: 0.8rem;
