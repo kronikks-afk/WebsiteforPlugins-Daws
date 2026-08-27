@@ -1,0 +1,270 @@
+/* CSS Reset & Variables */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #14100c;
+    --bg-color-alt: #17120d;
+    --card-bg: #1a1510;
+    --card-hover: #201a13;
+    --text-primary: #f2ede4;
+    --text-secondary: #8c8177;
+    --text-dim: #5e564c;
+    --accent-color: #c9a15c;
+    --accent-hover: #e0b968;
+    --accent-dim: rgba(201, 161, 92, 0.15);
+    --border-color: #2c2620;
+    --border-color-soft: #221d17;
+}
+
+body {
+    font-family: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 14px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Styling */
+.navbar {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color-soft);
+    padding: 22px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: var(--accent-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: color 0.2s, border-color 0.2s, background-color 0.2s;
+    border: 1px solid var(--border-color);
+    padding: 8px 14px;
+    display: inline-block;
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+    border-color: var(--text-dim);
+}
+
+.nav-links a.active {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+    background-color: var(--accent-dim);
+}
+
+/* Header Styling */
+header {
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color-soft);
+    padding: 60px 0 36px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+}
+
+header p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 22px;
+}
+
+/* Search Input */
+.search-container input {
+    width: 100%;
+    max-width: 500px;
+    padding: 13px 18px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.85rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.search-container input::placeholder {
+    color: var(--text-dim);
+}
+
+.search-container input:focus {
+    border-color: var(--accent-color);
+}
+
+/* Main Grid Layout */
+main {
+    flex: 1;
+    padding: 44px 20px;
+}
+
+.plugin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* Plugin Card */
+.plugin-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.plugin-card:hover {
+    background-color: var(--card-hover);
+    border-color: var(--text-dim);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+/* Category Badges - single accent tone, varying weight to keep the monochrome gold system */
+.badge {
+    font-size: 0.68rem;
+    font-weight: 600;
+    padding: 4px 8px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--accent-dim);
+}
+
+.badge.effect,
+.badge.dynamics,
+.badge.modulation {
+    border-color: var(--text-dim);
+    color: var(--text-secondary);
+    background-color: transparent;
+}
+
+.version {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.plugin-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.plugin-card p {
+    color: var(--text-secondary);
+    font-size: 0.82rem;
+    margin-bottom: 22px;
+    line-height: 1.55;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--border-color-soft);
+    padding-top: 14px;
+}
+
+.file-size {
+    font-size: 0.72rem;
+    color: var(--text-dim);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+/* Download Button */
+.download-btn {
+    background-color: var(--accent-color);
+    color: #14100c;
+    text-decoration: none;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    transition: background-color 0.2s;
+}
+
+.download-btn:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Utility State */
+.hidden {
+    display: none;
+}
+
+.no-results {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 50px;
+    font-size: 0.9rem;
+    border: 1px solid var(--border-color-soft);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 22px;
+    border-top: 1px solid var(--border-color-soft);
+    color: var(--text-dim);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+}

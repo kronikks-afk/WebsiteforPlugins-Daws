@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VST3 Plugin Vault - Kronikk Domain</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">KRONIKK<span>.DOMAIN</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Plugins</a></li>
+                <li><a href="daws.html">DAWs</a></li>
+                <li><a href="aftereffects.html">After Effects</a></li>
+                <li><a href="drumkits.html">Drumkits</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Kronikk Domain</h1>
+            <p>Download free, high-quality custom VST3 audio plugins, vibecoded by Kronikk</p>
+            <p>[REMINDER] 🚨 All of these plugins are for Windows Only!</p>
+           
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search plugins by name or category...">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="plugin-grid" id="pluginGrid">
+
+            <div class="plugin-card" data-name="zenology" data-category="synthesizer">
+                <div>
+                    <div class="card-header">
+                        <span class="badge synth">Synthesizer</span>
+                        <span class="version">v2.0</span>
+                    </div>
+                    <h3>Zenology</h3>
+                    <p>Essential for All Genres</p>
+                </div>
+                <div class="card-footer">
+                    <span class="file-size">External Link</span>
+                    <a href="https://drive.google.com/file/d/1oI0jpLTu4ItOErqNfCddgr2GzyB-k5p6/view?usp=drive_link" target="_blank" class="download-btn">Download</a>
+                </div>
+            </div>
+
+            <div class="plugin-card" data-name="hive" data-category="synthesizer">
+                <div>
+                    <div class="card-header">
+                        <span class="badge synth">Synthesizer</span>
+                        <span class="version">v2.1</span>
+                    </div>
+                    <h3>Hive</h3>
+                    <p>Weird Sounds, Cool Arps though.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="file-size">External Link</span>
+                    <a href="https://drive.google.com/drive/folders/1kn8xOHN4HkS6fZ9fQy2nTi9w6v9FPQ-9?usp=sharing" target="_blank" class="download-btn">Download</a>
+                </div>
+            </div>
+
+            <div class="plugin-card" data-name="serum" data-category="synthesizer">
+                <div>
+                    <div class="card-header">
+                        <span class="badge synth">Synthesizer</span>
+                        <span class="version">v1.36</span>
+                    </div>
+                    <h3>Serum</h3>
+                    <p>Make Cool Sounds!</p>
+                </div>
+                <div class="card-footer">
+                    <span class="file-size">External Link</span>
+                    <a href="https://drive.google.com/drive/folders/1EanfomenbVS593OzESTvLik0d-7_J_E7?usp=sharing" target="_blank" class="download-btn">Download</a>
+                </div>
+            </div>
+
+            <div class="plugin-card" data-name="serum 2" data-category="synthesizer">
+                <div>
+                    <div class="card-header">
+                        <span class="badge synth">Synthesizer</span>
+                        <span class="version">Next-Gen</span>
+                    </div>
+                    <h3>Serum 2</h3>
+                    <p>Make Cool Sounds, But More!</p>
+                </div>
+                <div class="card-footer">
+                    <span class="file-size">External Link</span>
+                    <a href="https://drive.google.com/drive/folders/13auLeLnbxMELygB0fnTV90rA6Xn-jNdO?usp=drive_link" target="_blank" class="download-btn">Download</a>
+                </div>
+            </div>
+
+            <div class="plugin-card" data-name="shaperbox 3" data-category="modulation">
+                <div>
+                    <div class="card-header">
+                        <span class="badge modulation">Modulation</span>
+                        <span class="version">v2.0</span>
+                    </div>
+                    <h3>ShaperBox 3</h3>
+                    <p>The ultimate plugin for modern mixes and infinite inspiration.</p>
+                </div>
+                <div class="card-footer">
+                    <span class="file-size">External Link</span>
+                    <a href="https://drive.google.com/drive/folders/1KNvVBumXBafvZIGDMueIhqwlvkp4E3WX?usp=sharing" target="_blank" class="download-btn">Download</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="noResults" class="no-results hidden">
+            <p>No plugins found matching your search. Try another keyword!</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; all vibecoded basically hi guys dont shut the website down please ok thansk</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
